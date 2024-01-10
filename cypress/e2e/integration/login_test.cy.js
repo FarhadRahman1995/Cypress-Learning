@@ -4,7 +4,7 @@ require("async")
 const loginPage = new LoginPage()
 
 it('Hellohrm Login test', () => {
-  loginPage.navigate('https://app.hellohrm.com');
+  loginPage.navigate('https://app.hellohrm.com/login');
   loginPage.enterUsername("farhadreg2jan");
   loginPage.enterPassword("123456");
   loginPage.clickLoginButton();
