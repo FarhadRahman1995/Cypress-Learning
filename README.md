@@ -6,5 +6,7 @@
 - npm i cypress-mochawesome-reporter
 - npx cypress run --reporter mochawesome
 - npm cypress run --config-file cypress.config.js
-- npx mochawesome-merge ./mochawesome-report/*.json -o ./final_report.json
-- npx marge ./final_report.json -o ./mochawesome-report
+- npx mochawesome-merge ./mochawesome-report/*.json -o ./final_report.json (Merge all json report)
+- npx merge ./final_report.json -o ./mochawesome-report (JSON report to html report convert)
+- npx cypress run --record --key a978a56a-ff6a-492c-a3c7-602033efdbf8 
+(Record a run to see your test results in Cypress Cloud. You can then optimize your test suite, debug failing and flaky tests, and integrate with your favorite tools.)

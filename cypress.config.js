@@ -1,13 +1,17 @@
 const { defineConfig } = require("cypress");
+
+module.exports = {
+  projectId: "fiqti3",
+  // ...rest of the Cypress project config
+}
+
 module.exports = (on, config) => {
   require('cypress-mochawesome-reporter/plugin')(on);
 };
 
-//Mergre multiple json to 1 file command: npx mochawesome-merge ./mochawesome-report/*.json -o ./final_report.json
-//Then JSON to HTML report generate command: npx marge ./final_report.json -o ./mochawesome-report
-
 module.exports = defineConfig({
   e2e: {
+    projectId: 'fiqti3', // <- add this line
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
